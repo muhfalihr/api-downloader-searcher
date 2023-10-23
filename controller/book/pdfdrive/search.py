@@ -171,9 +171,6 @@ class Search:
                 "nextpage": nextpage
             }
             return result
-            # results = json.dumps(result, indent=4)
-            # with open('controller/book/pdfdrive/results.json', 'w') as file:
-            #     file.write(results)
         else:
             raise Exception(
                 f"Error! status code {resp.status_code} : {resp.reason}")
@@ -181,5 +178,3 @@ class Search:
 
 if __name__ == "__main__":
     sb = Search()
-    # cek = sb.search(keyword="muhammad saw", page=1)
-    # print(cek)

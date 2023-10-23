@@ -59,8 +59,8 @@ class Downloader:
                 filename = re.search(
                     r'filename=([^;]+)', content_disposition).group(1)
             else:
-                filename = re.search(r'journal\.pone\.\d+', url).group(1)
-                filename = unquote(filename.replace(".", ""))
+                filename = re.search(r'journal\.pone\.\d+', url).group()
+                filename = unquote(f"{filename}.pdf")
             content_type = r.headers.get("content-type")
             return data, filename, content_type
         else:

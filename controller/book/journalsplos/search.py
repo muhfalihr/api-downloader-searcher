@@ -127,4 +127,3 @@ class Search:
 if __name__ == "__main__":
     cookies = []
     sb = Search()
-    sb.search()

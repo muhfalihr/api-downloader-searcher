@@ -139,6 +139,7 @@ class Download(Resource):
                 "required": True
             }
         },
+        description="If the ID contains the character / then take the ID before the sign."
     )
     def get(self):
         try:
