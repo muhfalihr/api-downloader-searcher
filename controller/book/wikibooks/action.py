@@ -61,30 +61,45 @@ class Search:
         if status_code == 200:
             datas = []
             html = content.decode('utf-8')
-            maxpage = self.parser.pyq_parser(
-                html,
-                '[id="mw-search-top-table"] [class="results-info"]'
-            ).attr('data-mw-num-results-total')
+            maxpage = (
+                self.parser.pyq_parser(
+                    html,
+                    '[id="mw-search-top-table"] [class="results-info"]'
+                )
+                .attr('data-mw-num-results-total')
+            )
             maxpage = int(maxpage) // limit
             nextpage = page+1 if page < maxpage else ""
             div = self.parser.pyq_parser(
                 html,
                 '[class="mw-search-results-container"] [class="mw-search-results"] [class="mw-search-result mw-search-result-ns-0"]'
             )
+
             links = []
             for a in div:
-                link = self.parser.pyq_parser(
-                    a,
-                    'a'
-                ).attr('href')
+                link = (
+                    self.parser.pyq_parser(
+                        a,
+                        'a'
+                    )
+                    .attr('href')
+                )
                 links.append(f"https://en.wikibooks.org{link}")
-            ids = [re.search(r'\/wiki\/(.+)', id).group(1) for id in links]
+
+            ids = [
+                re.search(r'\/wiki\/(.+)', id).group(1)
+                for id in links
+            ]
+
             titles = []
             for a in div:
-                title = self.parser.pyq_parser(
-                    a,
-                    'a'
-                ).text()
+                title = (
+                    self.parser.pyq_parser(
+                        a,
+                        'a'
+                    )
+                    .text()
+                )
                 titles.append(title)
             for title, id, link in zip(titles, ids, links):
                 data = {
@@ -130,13 +145,18 @@ class DepartementEnum(Search):
                 'div[style="flex: 1 0 50%; width:50%; min-width:10em; float: right; box-sizing: border-box; font-size:95%; display: flex; flex-wrap: wrap;"] div[style="float:left; width:25%; flex: 1 0 25%; min-width: 12em;"] li'
             )
             for a in div:
-                dep = self.parser.pyq_parser(
-                    a,
-                    'a'
-                ).attr('href')
+                dep = (
+                    self.parser.pyq_parser(
+                        a,
+                        'a'
+                    )
+                    .attr('href')
+                )
                 departements.append(dep)
             departements = [
-                re.search(r'\:(.+)', d).group(1) for d in departements[:-2]]
+                re.search(r'\:(.+)', d).group(1)
+                for d in departements[:-2]
+            ]
             return departements
         else:
             raise Exception(
@@ -171,19 +191,28 @@ class FeaturedBooks(Search):
                 'td[style="vertical-align:top; height:1%; padding:0em 0.5em 0.2em 0.5em; width:50%;"] ul li'
             )
             for a in div:
-                link = self.parser.pyq_parser(
-                    a,
-                    'a'
-                ).attr('href')
+                link = (
+                    self.parser.pyq_parser(
+                        a,
+                        'a'
+                    )
+                    .attr('href')
+                )
                 links.append(f"https://en.wikibooks.org{link}")
             titles = []
             for a in div:
-                title = self.parser.pyq_parser(
-                    a,
-                    'a'
-                ).text()
+                title = (
+                    self.parser.pyq_parser(
+                        a,
+                        'a'
+                    )
+                    .text()
+                )
                 titles.append(title)
-            ids = [re.search(r'\/wiki\/(.+)', id).group(1) for id in links]
+            ids = [
+                re.search(r'\/wiki\/(.+)', id).group(1)
+                for id in links
+            ]
             for title, id, link in zip(titles, ids, links):
                 data = {
                     "title": title,

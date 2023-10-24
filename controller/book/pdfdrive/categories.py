@@ -68,17 +68,23 @@ class Categories:
             )
             links = []
             for a in div:
-                link = self.parser.pyq_parser(
-                    a,
-                    'a'
-                ).attr('href')
+                link = (
+                    self.parser.pyq_parser(
+                        a,
+                        'a'
+                    )
+                    .attr('href')
+                )
                 links.append(f"https://www.pdfdrive.com{link}")
             categories = []
             for p in div:
-                cat = self.parser.pyq_parser(
-                    p,
-                    'a p'
-                ).text()
+                cat = (
+                    self.parser.pyq_parser(
+                        p,
+                        'a p'
+                    )
+                    .text()
+                )
                 categories.append(cat)
             links2 = []
             categories2 = []
@@ -102,16 +108,22 @@ class Categories:
                     )
                     if div2:
                         for a2 in div2:
-                            link2 = self.parser.pyq_parser(
-                                a2,
-                                'a'
-                            ).attr('href')
+                            link2 = (
+                                self.parser.pyq_parser(
+                                    a2,
+                                    'a'
+                                )
+                                .attr('href')
+                            )
                             links2.append(f"https://www.pdfdrive.com{link2}")
                         for p2 in div2:
-                            cat2 = self.parser.pyq_parser(
-                                p2,
-                                'a p'
-                            ).text()
+                            cat2 = (
+                                self.parser.pyq_parser(
+                                    p2,
+                                    'a p'
+                                )
+                                .text()
+                            )
                             categories2.append(cat2)
                     else:
                         pass
@@ -120,8 +132,10 @@ class Categories:
                         f"Error! status code {resp.status_code} : {resp.reason}")
             links.extend(links2)
             categories.extend(categories2)
-            ids = [re.search(r'/category/(\d+)', id).group(1)
-                   for id in links]
+            ids = [
+                re.search(r'/category/(\d+)', id).group(1)
+                for id in links
+            ]
             for link, cat, id in zip(links, categories, ids):
                 data = {
                     "category": cat,

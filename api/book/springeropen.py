@@ -4,34 +4,48 @@ import re
 import io
 
 from flask import Blueprint, request, send_file
-from flask_restx import Resource
+from flask_restx import Resource, fields
 from enum import Enum
 from api import api
 from helper import success_response, error_response, flask_response
-from controller.book.ebooksdirectory.allcategories import AllCategories
-from controller.book.ebooksdirectory.getbooks import GetBooks
-
-ebooksdirectory = Blueprint("ebooksdirectory", __name__)
-ns_api = api.namespace("ebooksdirectory", description="Book")
+from controller.book.springeropen.search import Search
+from controller.book.springeropen.downloader import Downloader
 
 
-class OptionsEnum(Enum):
-    cat = "categories"
-    new = "new"
-    top = "top20"
-    pop = "popular"
+springeropen = Blueprint("springeropen", __name__)
+ns_api = api.namespace("springeropen", description="Book")
 
 
-@ns_api.route("/get-allcategories", methods=["GET"])
-class GetAllCategories(Resource):
+class SortByEnum(Enum):
+    relevance = "Relevance"
+    date = "PubDate"
+
+
+@ns_api.route("/search", methods=["GET"])
+class BooksSearch(Resource):
     @api.doc(
         responses=flask_response("get"),
-        description="Returns All Categories"
+        params={
+            "keyword": {"description": "keyword", "required": True},
+            "sortby": {
+                "description": "Parameter for sort the result",
+                "enum": [e.value for e in SortByEnum],
+                "default": SortByEnum.relevance.value
+            },
+            "page": {
+                "description": "Page number",
+                "type": int,
+                "default": 1,
+            }
+        }
     )
     def get(self):
         try:
-            allcat = AllCategories()
-            data = allcat.allcategories()
+            keyword = request.values.get("keyword")
+            sortby = request.values.get("sortby")
+            page = request.values.get("page")
+            search = Search()
+            data = search.search(keyword=keyword, sortby=sortby, page=page)
             return (
                 success_response(data, message="success"), 200
             )
@@ -61,35 +75,29 @@ class GetAllCategories(Resource):
                 )
 
 
-@ns_api.route("/get-books", methods=["GET"])
-class TheGetBooks(Resource):
+@ns_api.route("/download", methods=["GET"])
+class Download(Resource):
     @api.doc(
         responses=flask_response("get"),
         params={
-            "option": {
-                "description": "Parameters to determine the option",
-                "enum": [e.value for e in OptionsEnum],
-                "default": OptionsEnum.cat.value
-            },
-            "category": {
-                "description": "id taken from get-allcategories"
-            },
-            "page": {
-                "description": "Page number\nNOTE: for category options no page numbers are required. So these page numbers are used for options other than categories.",
-                "type": int,
-                "default": 1,
+            "url": {
+                "description": "slug",
+                "required": True
             }
-        }
+        },
+        description="URL taken from search results."
     )
     def get(self):
         try:
-            option = request.values.get("option")
-            category = request.values.get("category")
-            page = request.values.get("page")
-            gb = GetBooks()
-            data = gb.getbooks(option=option, id=category, page=page)
-            return (
-                success_response(data, message="success"), 200
+            url = request.values.get("url")
+            downloader = Downloader()
+            data, filename, content_type = downloader.download(url=url)
+            file_stream = io.BytesIO(data)
+            return send_file(
+                file_stream,
+                as_attachment=True,
+                mimetype=content_type,
+                download_name=filename
             )
         except Exception as e:
             if re.search("status code", str(e)):

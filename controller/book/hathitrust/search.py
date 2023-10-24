@@ -49,7 +49,8 @@ class Search:
             cookies = self.set_cookies(cookies=cookies)
         keyword = keyword.replace(" ", "+")
         page = int(page)
-        page = page+1 if page == 0 else -page if '-' in str(page) else page
+        page = page+1 if page == 0\
+            else -page if '-' in str(page) else page
         match category:
             case 'all' | 'title' | 'author' | 'subject' | 'isn' | 'publisher' | 'seriestitle':
                 url = f'https://catalog.hathitrust.org/Search/Home?type%5B%5D={category}&lookfor%5B%5D={keyword}&page={page}&pagesize={pagesize}'
@@ -70,10 +71,13 @@ class Search:
         if status_code == 200:
             datas = []
             html = content.decode("utf-8")
-            maxpage = self.parser.pyq_parser(
-                html,
-                'hathi-results-pagination'
-            ).attr('data-prop-max-pages')
+            maxpage = (
+                self.parser.pyq_parser(
+                    html,
+                    'hathi-results-pagination'
+                )
+                .attr('data-prop-max-pages')
+            )
             maxpage = int(maxpage)
             nextpage = page+1 if page < maxpage else ""
 
@@ -83,10 +87,13 @@ class Search:
             )
             links = []
             for raw in data:
-                link = self.parser.pyq_parser(
-                    raw,
-                    '[class="list-group-item list-group-item-action w-sm-50"]'
-                ).attr("href")
+                link = (
+                    self.parser.pyq_parser(
+                        raw,
+                        '[class="list-group-item list-group-item-action w-sm-50"]'
+                    )
+                    .attr("href")
+                )
                 link = f"https://catalog.hathitrust.org/{link}"
                 links.append(link)
 
@@ -109,10 +116,14 @@ class Search:
                         'article[class="record d-flex flex-column gap-3 p-3 mb-3 mt-3"]'
                     )
                     for raw in data:
-                        title = self.parser.pyq_parser(
-                            raw,
-                            '[class="article-heading d-flex gap-3"]'
-                        ).text().replace("\n", "")
+                        title = (
+                            self.parser.pyq_parser(
+                                raw,
+                                '[class="article-heading d-flex gap-3"]'
+                            )
+                            .text()
+                            .replace("\n", "")
+                        )
                         metadata = self.parser.pyq_parser(
                             raw,
                             '[class="metadata"] [class="grid"]'
@@ -124,28 +135,38 @@ class Search:
 
                         alist = []
                         for a in atag:
-                            origin_site = self.parser.pyq_parser(
-                                a,
-                                'a'
-                            ).attr('href')
+                            origin_site = (
+                                self.parser.pyq_parser(
+                                    a,
+                                    'a'
+                                )
+                                .attr('href')
+                            )
                             alist.append(origin_site)
 
                         data_grid = dict()
 
                         for grid in metadata:
-                            key = self.parser.pyq_parser(
-                                grid,
-                                '[class="g-col-lg-4 g-col-12"]'
-                            ).text().rstrip().lstrip()
+                            key = (
+                                self.parser.pyq_parser(
+                                    grid,
+                                    '[class="g-col-lg-4 g-col-12"]'
+                                )
+                                .text()
+                                .rstrip()
+                                .lstrip()
+                            )
                             key = re.sub(r'\(s\)', '', key)
                             value = self.parser.pyq_parser(
                                 grid,
                                 '[class="g-col-lg-8 g-col-12"]'
                             )
-                            value = re.sub(r'>[^/]+/', '>',
-                                           value.text().rstrip().lstrip().replace('"', ''))
-                            data_grid[key] = value.split(
-                                '\n') if '\n' in value else value
+                            value = re.sub(
+                                r'>[^/]+/', '>',
+                                value.text().rstrip().lstrip().replace('"', '')
+                            )
+                            data_grid[key] = value.split('\n')\
+                                if '\n' in value else value
                         isbn = [
                             re.sub(r'\D', '', i)
                             for i in self.emptyarray(

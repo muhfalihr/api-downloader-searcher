@@ -64,18 +64,24 @@ class AllCategories:
                 'article[class="main_categories"] table tr a'
             )
             for link in tag_a:
-                a = self.parser.pyq_parser(
-                    link,
-                    'a'
-                ).attr('href')
+                a = (
+                    self.parser.pyq_parser(
+                        link,
+                        'a'
+                    )
+                    .attr('href')
+                )
                 links.append(f"http://www.e-booksdirectory.com/{a}")
 
             categories = []
             for name in tag_a:
-                cn = self.parser.pyq_parser(
-                    name,
-                    'a'
-                ).text()
+                cn = (
+                    self.parser.pyq_parser(
+                        name,
+                        'a'
+                    )
+                    .text()
+                )
                 categories.append(cn)
 
             ids = [

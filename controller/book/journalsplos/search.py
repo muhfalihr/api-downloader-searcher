@@ -35,19 +35,22 @@ class Search:
 
     def set_pubdate(self, start, end):
         if start != None:
-            start = start if "-" in start else datetime.strptime(
-                start, "%Y/%m/%d").strftime("%Y-%m-%d") if "/" in start else datetime.strptime(
-                start, "%Y%m%d").strftime("%Y-%m-%d")
+            start = start if "-" in start\
+                else datetime.strptime(start, "%Y/%m/%d").strftime("%Y-%m-%d")\
+                if "/" in start\
+                else datetime.strptime(start, "%Y%m%d").strftime("%Y-%m-%d")
             current_date = datetime.now().strftime("%Y-%m-%d")
             return start, current_date
 
         elif start and end != None:
-            start = start if "-" in start else datetime.strptime(
-                start, "%Y/%m/%d").strftime("%Y-%m-%d") if "/" in start else datetime.strptime(
-                start, "%Y%m%d").strftime("%Y-%m-%d")
-            end = end if "-" in end else datetime.strptime(
-                end, "%Y/%m/%d").strftime("%Y-%m-%d") if "/" in end else datetime.strptime(
-                end, "%Y%m%d").strftime("%Y-%m-%d")
+            start = start if "-" in start\
+                else datetime.strptime(start, "%Y/%m/%d").strftime("%Y-%m-%d")\
+                if "/" in start\
+                else datetime.strptime(start, "%Y%m%d").strftime("%Y-%m-%d")
+            end = end if "-" in end\
+                else datetime.strptime(end, "%Y/%m/%d").strftime("%Y-%m-%d")\
+                if "/" in end\
+                else datetime.strptime(end, "%Y%m%d").strftime("%Y-%m-%d")
             return start, end
 
         else:

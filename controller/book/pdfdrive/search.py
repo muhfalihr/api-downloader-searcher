@@ -42,11 +42,11 @@ class Search:
         user_agent = self.fake.user_agent()
         if cookies:
             cookies = self.set_cookies(cookies=cookies)
-        pub_year = "" if pub_year == "Pub. Year" else re.search(
-            r'\d+', pub_year).group()
+        pub_year = "" if pub_year == "Pub. Year"\
+            else re.search(r'\d+', pub_year).group()
         keyword = keyword.replace(" ", "+") if keyword != None else ""
-        pagecount = "" if pagecount == "Any Pages" else pagecount.replace(
-            "+", "-*")
+        pagecount = "" if pagecount == "Any Pages"\
+            else pagecount.replace("+", "-*")
         lang = ""
         em = 0 if em == "false" or False else 1
         page = int(page)
@@ -77,10 +77,13 @@ class Search:
                 '[class="pagination"] [class="Zebra_Pagination"] ul li'
             )
             for li in tag_li:
-                p = self.parser.pyq_parser(
-                    li,
-                    'li'
-                ).text()
+                p = (
+                    self.parser.pyq_parser(
+                        li,
+                        'li'
+                    )
+                    .text()
+                )
                 page_list.append(p)
             maxpage = int(page_list[-2]) if page_list != [] else 1
             nextpage = page+1 if page < maxpage else ""
@@ -90,10 +93,13 @@ class Search:
             )
             links = []
             for a in div:
-                link = self.parser.pyq_parser(
-                    a,
-                    'div[class="file-right"] a'
-                ).attr('href')
+                link = (
+                    self.parser.pyq_parser(
+                        a,
+                        'div[class="file-right"] a'
+                    )
+                    .attr('href')
+                )
                 links.append(f"https://www.pdfdrive.com{link}")
             links = list(
                 filter(lambda x: x != "https://www.pdfdrive.comNone", links))
@@ -115,18 +121,27 @@ class Search:
                         html,
                         'div[class="ebook-main"]'
                     )
-                    img = self.parser.pyq_parser(
-                        div,
-                        'img[class="ebook-img"]'
-                    ).attr('src')
-                    title = self.parser.pyq_parser(
-                        div,
-                        'h1[itemprop="name"]'
-                    ).text()
-                    author = self.parser.pyq_parser(
-                        div,
-                        'div[class="ebook-author"] span[itemprop="creator"]'
-                    ).text()
+                    img = (
+                        self.parser.pyq_parser(
+                            div,
+                            'img[class="ebook-img"]'
+                        )
+                        .attr('src')
+                    )
+                    title = (
+                        self.parser.pyq_parser(
+                            div,
+                            'h1[itemprop="name"]'
+                        )
+                        .text()
+                    )
+                    author = (
+                        self.parser.pyq_parser(
+                            div,
+                            'div[class="ebook-author"] span[itemprop="creator"]'
+                        )
+                        .text()
+                    )
                     info = self.parser.pyq_parser(
                         div,
                         'div[class="ebook-file-info"] span[class="info-green"]'
@@ -141,15 +156,21 @@ class Search:
                         'div[class="ebook-tags"] a'
                     )
                     for a in tag_div:
-                        tag = self.parser.pyq_parser(
-                            a,
-                            'a'
-                        ).text()
+                        tag = (
+                            self.parser.pyq_parser(
+                                a,
+                                'a'
+                            )
+                            .text()
+                        )
                         tags.append(tag)
-                    downloadsite = self.parser.pyq_parser(
-                        div,
-                        'span[id="download-button"] a[id="download-button-link"]'
-                    ).attr('href')
+                    downloadsite = (
+                        self.parser.pyq_parser(
+                            div,
+                            'span[id="download-button"] a[id="download-button-link"]'
+                        )
+                        .attr('href')
+                    )
                     downloadsite = f"https://www.pdfdrive.com{downloadsite}#top"
                     data = {
                         "title": title,

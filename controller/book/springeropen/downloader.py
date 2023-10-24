@@ -36,15 +36,15 @@ class Downloader:
             )
         return self.jar
 
-    def download(self, id, proxy=None, cookies=None, **kwargs):
+    def download(self, url, proxy=None, cookies=None, **kwargs):
         user_agent = self.fake.user_agent()
         if cookies:
             cookies = self.set_cookies(cookies=cookies)
-        url = f'https://en.wikibooks.org/api/rest_v1/page/pdf/{id}'
+
         self.headers["User-Agent"] = user_agent
         resp = self.session.request(
             "GET",
-            url=unquote(url),
+            url=url,
             timeout=60,
             proxies=proxy,
             headers=self.headers,
@@ -56,13 +56,16 @@ class Downloader:
         if status_code == 200:
             content_disposition = resp.headers.get("content-disposition")
             if content_disposition:
-                filename = (
-                    re.search(r'filename=([^;]+)', content_disposition)
-                    .group(1)
-                    .replace('"', '')
-                )
+                filename = re.search(
+                    r'filename=([^;]+)', content_disposition).group(1)
             else:
-                filename = unquote(f"{id}.pdf")
+                if "link.springer.com" in url:
+                    filename = re.search(
+                        r'content/pdf/10.1186/(.*$)', url).group(1)
+                else:
+                    filename = re.search(
+                        r'counter/pdf/10.1186/(.*$)', url).group(1)
+                filename = unquote(filename)
             content_type = resp.headers.get("content-type")
             return data, filename, content_type
         else:

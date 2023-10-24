@@ -68,10 +68,13 @@ class GetBooks:
                         '[class="dir_books"] [class="img_list"] a'
                     )
                     for link in tag_a:
-                        a = self.parser.pyq_parser(
-                            link,
-                            'a'
-                        ).attr('href')
+                        a = (
+                            self.parser.pyq_parser(
+                                link,
+                                'a'
+                            )
+                            .attr('href')
+                        )
                         links.append(f"http://www.e-booksdirectory.com/{a}")
 
                     for url in links:
@@ -92,51 +95,88 @@ class GetBooks:
                                 html,
                                 'article[itemtype="http://schema.org/Book"] p'
                             )
-                            title = self.parser.pyq_parser(
-                                detail_book,
-                                'strong[itemprop="name"]'
-                            ).text()
-                            img = self.parser.pyq_parser(
-                                detail_book,
-                                'img[itemprop="image"]'
-                            ).attr('src')
+                            title = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'strong[itemprop="name"]'
+                                )
+                                .text()
+                            )
+                            img = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'img[itemprop="image"]'
+                                )
+                                .attr('src')
+                            )
                             img = f"http://www.e-booksdirectory.com/{img}"
-                            author = self.parser.pyq_parser(
-                                detail_book,
-                                'span[itemprop="author"]'
-                            ).text()
-                            publisher = self.parser.pyq_parser(
-                                detail_book,
-                                'span[itemprop="publisher"] span[itemprop="name"]'
-                            ).text()
-                            datePublished = self.parser.pyq_parser(
-                                detail_book,
-                                'span[itemprop="datePublished"]'
-                            ).text()
-                            isbnasin = self.parser.pyq_parser(
-                                detail_book,
-                                'span[itemprop="isbn"]'
-                            ).eq(0).text()
-                            isbn13 = self.parser.pyq_parser(
-                                detail_book,
-                                'span[itemprop="isbn"]'
-                            ).eq(1).text()
-                            numpage = self.parser.pyq_parser(
-                                detail_book,
-                                'span[itemprop="numberOfPages"]'
-                            ).text()
-                            desc = self.parser.pyq_parser(
-                                detail_book,
-                                'span[itemprop="description"]'
-                            ).text()
-                            originsite = self.parser.pyq_parser(
-                                detail_book,
-                                'a[target="_blank"]'
-                            ).eq(1).attr('href')
-                            originsite_h = self.parser.pyq_parser(
-                                detail_book,
-                                'a[target="_blank"]'
-                            ).eq(0).attr('href')
+                            author = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'span[itemprop="author"]'
+                                )
+                                .text()
+                            )
+                            publisher = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'span[itemprop="publisher"] span[itemprop="name"]'
+                                )
+                                .text()
+                            )
+                            datePublished = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'span[itemprop="datePublished"]'
+                                )
+                                .text()
+                            )
+                            isbnasin = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'span[itemprop="isbn"]'
+                                )
+                                .eq(0)
+                                .text()
+                            )
+                            isbn13 = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'span[itemprop="isbn"]'
+                                )
+                                .eq(1)
+                                .text()
+                            )
+                            numpage = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'span[itemprop="numberOfPages"]'
+                                )
+                                .text()
+                            )
+                            desc = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'span[itemprop="description"]'
+                                )
+                                .text()
+                            )
+                            originsite = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'a[target="_blank"]'
+                                )
+                                .eq(1)
+                                .attr('href')
+                            )
+                            originsite_h = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'a[target="_blank"]'
+                                )
+                                .eq(0)
+                                .attr('href')
+                            )
                             originsite = originsite if originsite != None else originsite_h if originsite_h != None else ""
 
                             data = {
@@ -178,10 +218,13 @@ class GetBooks:
                 if status_code1 == 200:
                     datas = []
                     html1 = content1.decode('utf-8')
-                    maxpage = self.parser.pyq_parser(
-                        html1,
-                        'input[value="Next"]'
-                    ).attr('value')
+                    maxpage = (
+                        self.parser.pyq_parser(
+                            html1,
+                            'input[value="Next"]'
+                        )
+                        .attr('value')
+                    )
                     nextpage = page+1 if maxpage != None else ""
 
                     links = []
@@ -191,10 +234,13 @@ class GetBooks:
                             '[class="img_list"] a'
                         )
                         for link in tag_a1:
-                            a = self.parser.pyq_parser(
-                                link,
-                                'a'
-                            ).attr('href')
+                            a = (
+                                self.parser.pyq_parser(
+                                    link,
+                                    'a'
+                                )
+                                .attr('href')
+                            )
                             links.append(
                                 f"http://www.e-booksdirectory.com/{a}")
                     elif page > 1:
@@ -223,10 +269,13 @@ class GetBooks:
                                 '[class="img_list"] a'
                             )
                             for link in tag_a2:
-                                a = self.parser.pyq_parser(
-                                    link,
-                                    'a'
-                                ).attr('href')
+                                a = (
+                                    self.parser.pyq_parser(
+                                        link,
+                                        'a'
+                                    )
+                                    .attr('href')
+                                )
                                 links.append(
                                     f"http://www.e-booksdirectory.com/{a}")
                         else:
@@ -251,52 +300,90 @@ class GetBooks:
                                 html,
                                 'article[itemtype="http://schema.org/Book"] p'
                             )
-                            title = self.parser.pyq_parser(
-                                detail_book,
-                                'strong[itemprop="name"]'
-                            ).text()
-                            img = self.parser.pyq_parser(
-                                detail_book,
-                                'img[itemprop="image"]'
-                            ).attr('src')
+                            title = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'strong[itemprop="name"]'
+                                )
+                                .text()
+                            )
+                            img = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'img[itemprop="image"]'
+                                )
+                                .attr('src')
+                            )
                             img = f"http://www.e-booksdirectory.com/{img}"
-                            author = self.parser.pyq_parser(
-                                detail_book,
-                                'span[itemprop="author"]'
-                            ).text()
-                            publisher = self.parser.pyq_parser(
-                                detail_book,
-                                'span[itemprop="publisher"] span[itemprop="name"]'
-                            ).text()
-                            datePublished = self.parser.pyq_parser(
-                                detail_book,
-                                'span[itemprop="datePublished"]'
-                            ).text()
-                            isbnasin = self.parser.pyq_parser(
-                                detail_book,
-                                'span[itemprop="isbn"]'
-                            ).eq(0).text()
-                            isbn13 = self.parser.pyq_parser(
-                                detail_book,
-                                'span[itemprop="isbn"]'
-                            ).eq(1).text()
-                            numpage = self.parser.pyq_parser(
-                                detail_book,
-                                'span[itemprop="numberOfPages"]'
-                            ).text()
-                            desc = self.parser.pyq_parser(
-                                detail_book,
-                                'span[itemprop="description"]'
-                            ).text()
-                            originsite = self.parser.pyq_parser(
-                                detail_book,
-                                'a[target="_blank"]'
-                            ).eq(1).attr('href')
-                            originsite_h = self.parser.pyq_parser(
-                                detail_book,
-                                'a[target="_blank"]'
-                            ).eq(0).attr('href')
-                            originsite = originsite if originsite != None else originsite_h if originsite_h != None else ""
+                            author = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'span[itemprop="author"]'
+                                )
+                                .text()
+                            )
+                            publisher = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'span[itemprop="publisher"] span[itemprop="name"]'
+                                )
+                                .text()
+                            )
+                            datePublished = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'span[itemprop="datePublished"]'
+                                )
+                                .text()
+                            )
+                            isbnasin = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'span[itemprop="isbn"]'
+                                )
+                                .eq(0)
+                                .text()
+                            )
+                            isbn13 = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'span[itemprop="isbn"]'
+                                )
+                                .eq(1)
+                                .text()
+                            )
+                            numpage = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'span[itemprop="numberOfPages"]'
+                                )
+                                .text()
+                            )
+                            desc = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'span[itemprop="description"]'
+                                )
+                                .text()
+                            )
+                            originsite = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'a[target="_blank"]'
+                                )
+                                .eq(1)
+                                .attr('href')
+                            )
+                            originsite_h = (
+                                self.parser.pyq_parser(
+                                    detail_book,
+                                    'a[target="_blank"]'
+                                )
+                                .eq(0)
+                                .attr('href')
+                            )
+                            originsite = originsite if originsite != None\
+                                else originsite_h if originsite_h != None else ""
 
                             data = {
                                 "title": title,

@@ -39,10 +39,14 @@ class All:
         return self.jar
 
     def datarow(self, parent: bytes, eq: int):
-        field = self.parser.pyq_parser(
-            parent,
-            'div[class="col-lg-6 col-md-6 col-md-6"] p'
-        ).eq(eq).clone()
+        field = (
+            self.parser.pyq_parser(
+                parent,
+                'div[class="col-lg-6 col-md-6 col-md-6"] p'
+            )
+            .eq(eq)
+            .clone()
+        )
         field.find("strong").remove()
         return field.text().lstrip(': ').replace('n/a', '').replace('N/A', '')
 
@@ -72,10 +76,13 @@ class All:
                 'span[class="visible-xs"] p[class="media-heading lead"] a'
             )
             for link in tag_a:
-                a = self.parser.pyq_parser(
-                    link,
-                    'a'
-                ).attr('href')
+                a = (
+                    self.parser.pyq_parser(
+                        link,
+                        'a'
+                    )
+                    .attr('href')
+                )
                 links.append(a)
             pagelist = []
             tag_li = self.parser.pyq_parser(
@@ -83,10 +90,13 @@ class All:
                 'ul[class="pagination"] li'
             )
             for num in tag_li:
-                pn = self.parser.pyq_parser(
-                    num,
-                    'li'
-                ).text()
+                pn = (
+                    self.parser.pyq_parser(
+                        num,
+                        'li'
+                    )
+                    .text()
+                )
                 pagelist.append(pn)
             maxpage = int(pagelist[-2]) if pagelist != [] else 1
             nextpage = page+1 if page < maxpage else ""
@@ -108,28 +118,42 @@ class All:
                         html,
                         'div[class="col-lg-8 col-md-8"]'
                     )
-                    title = self.parser.pyq_parser(
-                        details_book,
-                        'p[class="media-heading h3"]'
-                    ).text()
-                    img = self.parser.pyq_parser(
-                        details_book,
-                        'div[class="col-xs-12"] img[class="thumbnail"]'
-                    ).attr('src')
-                    desc = self.parser.pyq_parser(
-                        details_book,
-                        'div[class="col-xs-12"]'
-                    ).eq(0).text()
+                    title = (
+                        self.parser.pyq_parser(
+                            details_book,
+                            'p[class="media-heading h3"]'
+                        )
+                        .text()
+                    )
+                    img = (
+                        self.parser.pyq_parser(
+                            details_book,
+                            'div[class="col-xs-12"] img[class="thumbnail"]'
+                        )
+                        .attr('src')
+                    )
+                    desc = (
+                        self.parser.pyq_parser(
+                            details_book,
+                            'div[class="col-xs-12"]'
+                        )
+                        .eq(0)
+                        .text()
+                    )
                     authors = []
                     about_authors = self.parser.pyq_parser(
                         details_book,
                         'div[class="row"] span[class="visible-xs"] ul[class="list-inline"]'
                     )
                     for auth in about_authors:
-                        author = self.parser.pyq_parser(
-                            auth,
-                            'li'
-                        ).eq(0).text()
+                        author = (
+                            self.parser.pyq_parser(
+                                auth,
+                                'li'
+                            )
+                            .eq(0)
+                            .text()
+                        )
                         authors.append(author)
                     tags = []
                     about_tags = self.parser.pyq_parser(
@@ -137,10 +161,13 @@ class All:
                         'div[class="col-lg-12 col-md-12 col-md-12"] p a'
                     )
                     for t in about_tags:
-                        tag = self.parser.pyq_parser(
-                            t,
-                            'a'
-                        ).text()
+                        tag = (
+                            self.parser.pyq_parser(
+                                t,
+                                'a'
+                            )
+                            .text()
+                        )
                         tags.append(tag)
                     pubdate = self.datarow(details_book, 0)
                     isbn10 = self.datarow(details_book, 1)
@@ -151,14 +178,20 @@ class All:
                     publisher = self.datarow(details_book, 6)
                     license = self.datarow(details_book, 7)
                     post_time = self.datarow(details_book, 8)
-                    excerpts = self.parser.pyq_parser(
-                        details_book,
-                        'div blockquote span'
-                    ).text()
-                    downloadsite = self.parser.pyq_parser(
-                        details_book,
-                        'div[id="srvata-content"] li a[class="btn btn-primary"]'
-                    ).attr('href')
+                    excerpts = (
+                        self.parser.pyq_parser(
+                            details_book,
+                            'div blockquote span'
+                        )
+                        .text()
+                    )
+                    downloadsite = (
+                        self.parser.pyq_parser(
+                            details_book,
+                            'div[id="srvata-content"] li a[class="btn btn-primary"]'
+                        )
+                        .attr('href')
+                    )
                     data = {
                         "title": title,
                         "thumbnail_link": img,
@@ -229,17 +262,23 @@ class All:
                         'div[class="col-lg-8 col-md-8"] tbody tr'
                     )
                     for a in div:
-                        link = self.parser.pyq_parser(
-                            a,
-                            'a'
-                        ).attr('href')
+                        link = (
+                            self.parser.pyq_parser(
+                                a,
+                                'a'
+                            )
+                            .attr('href')
+                        )
                         links.append(link)
                     categories = []
                     for a in div:
-                        cat = self.parser.pyq_parser(
-                            a,
-                            'a'
-                        ).text()
+                        cat = (
+                            self.parser.pyq_parser(
+                                a,
+                                'a'
+                            )
+                            .text()
+                        )
                         categories.append(cat)
                     ids = [
                         re.search(r'/([^/]+)\.html$', id).group(1)
@@ -285,10 +324,13 @@ class All:
                         'ul[class="pagination"] li'
                     )
                     for num in tag_li:
-                        pn = self.parser.pyq_parser(
-                            num,
-                            'li'
-                        ).text()
+                        pn = (
+                            self.parser.pyq_parser(
+                                num,
+                                'li'
+                            )
+                            .text()
+                        )
                         pagelist.append(pn)
                     maxpage = int(pagelist[-2])
                     nextpage = page+1 if page < maxpage else ""
@@ -298,10 +340,13 @@ class All:
                         'table[class="table table-hover table-responsive"] tbody tr td[class="col-md-3"]'
                     )
                     for a in table:
-                        link = self.parser.pyq_parser(
-                            a,
-                            'a'
-                        ).attr('href')
+                        link = (
+                            self.parser.pyq_parser(
+                                a,
+                                'a'
+                            )
+                            .attr('href')
+                        )
                         links.append(link)
                     links = self.unique(links)
                     table = self.parser.pyq_parser(
@@ -316,10 +361,14 @@ class All:
                         )
                         fix = []
                         for fn in name:
-                            fullname = self.parser.pyq_parser(
-                                fn,
-                                '[class="col-md-3"]'
-                            ).text().replace('"', "'")
+                            fullname = (
+                                self.parser.pyq_parser(
+                                    fn,
+                                    '[class="col-md-3"]'
+                                )
+                                .text()
+                                .replace('"', "'")
+                            )
                             fix.append(fullname)
                         fix.reverse()
                         fullnames.append(' '.join(fix))
@@ -329,10 +378,13 @@ class All:
                     ]
                     posts = []
                     for p in table:
-                        post = self.parser.pyq_parser(
-                            p,
-                            'td[class="col-md-1 text-center"]'
-                        ).text()
+                        post = (
+                            self.parser.pyq_parser(
+                                p,
+                                'td[class="col-md-1 text-center"]'
+                            )
+                            .text()
+                        )
                         posts.append(post)
 
                     for link, fullname, id, post in zip(links, fullnames, ids, posts):
@@ -377,10 +429,13 @@ class All:
                         'ul[class="pagination"] li'
                     )
                     for num in tag_li:
-                        pn = self.parser.pyq_parser(
-                            num,
-                            'li'
-                        ).text()
+                        pn = (
+                            self.parser.pyq_parser(
+                                num,
+                                'li'
+                            )
+                            .text()
+                        )
                         pagelist.append(pn)
                     maxpage = int(pagelist[-2])
                     nextpage = page+1 if page < maxpage else ""
@@ -390,17 +445,23 @@ class All:
                         'table[class="table table-hover table-responsive"] tbody tr td[class="col-md-6"]'
                     )
                     for a in table:
-                        link = self.parser.pyq_parser(
-                            a,
-                            'a'
-                        ).attr('href')
+                        link = (
+                            self.parser.pyq_parser(
+                                a,
+                                'a'
+                            )
+                            .attr('href')
+                        )
                         links.append(link)
                     publisher_names = []
                     for a in table:
-                        name = self.parser.pyq_parser(
-                            a,
-                            'a'
-                        ).text()
+                        name = (
+                            self.parser.pyq_parser(
+                                a,
+                                'a'
+                            )
+                            .text()
+                        )
                         publisher_names.append(name)
                     table = self.parser.pyq_parser(
                         div,
@@ -408,10 +469,13 @@ class All:
                     )
                     posts = []
                     for p in table:
-                        post = self.parser.pyq_parser(
-                            p,
-                            'td[class="col-md-1 text-center"]'
-                        ).text()
+                        post = (
+                            self.parser.pyq_parser(
+                                p,
+                                'td[class="col-md-1 text-center"]'
+                            )
+                            .text()
+                        )
                         posts.append(post)
                     ids = [
                         re.search(r'/([^/]+)\.html$', id).group(1)
@@ -458,10 +522,13 @@ class All:
                         'ul[class="pagination"] li'
                     )
                     for num in tag_li:
-                        pn = self.parser.pyq_parser(
-                            num,
-                            'li'
-                        ).text()
+                        pn = (
+                            self.parser.pyq_parser(
+                                num,
+                                'li'
+                            )
+                            .text()
+                        )
                         pagelist.append(pn)
                     maxpage = int(pagelist[-2])
                     nextpage = page+1 if page < maxpage else ""
@@ -471,17 +538,23 @@ class All:
                         'table[class="table table-hover table-responsive"] tbody tr td[class="col-md-6"]'
                     )
                     for a in table:
-                        link = self.parser.pyq_parser(
-                            a,
-                            'a'
-                        ).attr('href')
+                        link = (
+                            self.parser.pyq_parser(
+                                a,
+                                'a'
+                            )
+                            .attr('href')
+                        )
                         links.append(link)
                     license_names = []
                     for a in table:
-                        name = self.parser.pyq_parser(
-                            a,
-                            'a'
-                        ).text()
+                        name = (
+                            self.parser.pyq_parser(
+                                a,
+                                'a'
+                            )
+                            .text()
+                        )
                         license_names.append(name)
                     table = self.parser.pyq_parser(
                         div,
@@ -489,10 +562,13 @@ class All:
                     )
                     posts = []
                     for p in table:
-                        post = self.parser.pyq_parser(
-                            p,
-                            'td[class="col-md-1 text-center"]'
-                        ).text()
+                        post = (
+                            self.parser.pyq_parser(
+                                p,
+                                'td[class="col-md-1 text-center"]'
+                            )
+                            .text()
+                        )
                         posts.append(post)
                     ids = [
                         re.search(r'/([^/]+)\.html$', id).group(1)
