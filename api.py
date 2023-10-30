@@ -17,6 +17,8 @@ from api.book.freetechbooks import freetechbooks
 from api.book.pdfdrive import pdfdrive
 from api.book.wikibooks import wikibooks
 from api.book.springeropen import springeropen
+from api.book.elsevier import elsevier
+from api.book.linkspringer import linkspringer
 
 setup_logging()
 logger = logging.getLogger(__name__)

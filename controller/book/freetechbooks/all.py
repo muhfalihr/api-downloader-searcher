@@ -98,7 +98,8 @@ class All:
                     .text()
                 )
                 pagelist.append(pn)
-            maxpage = int(pagelist[-2]) if pagelist != [] else 1
+            maxpage = int(pagelist[-2].replace(',', ''))\
+                if pagelist != [] else 1
             nextpage = page+1 if page < maxpage else ""
             for url in links:
                 resp = self.session.request(
@@ -232,7 +233,7 @@ class All:
         self.headers["User-Agent"] = user_agent
         match option:
             case "topics":
-                url = f"https://www.freetechbooks.com/topics?page={page}"
+                url = f"http://www.freetechbooks.com/topics?page={page}"
                 result = self.crawldatas(
                     url=url,
                     page=page,
@@ -242,7 +243,7 @@ class All:
                 return result
 
             case "categories":
-                url = "https://www.freetechbooks.com/categories"
+                url = "http://www.freetechbooks.com/categories"
                 resp = self.session.request(
                     method="GET",
                     url=url,
@@ -300,7 +301,7 @@ class All:
                         f"Error! status code {resp.status_code} : {resp.reason}")
 
             case "authors":
-                url = f"https://www.freetechbooks.com/authors?page={page}"
+                url = f"http://www.freetechbooks.com/authors?page={page}"
                 resp = self.session.request(
                     method="GET",
                     url=url,
@@ -405,7 +406,7 @@ class All:
                         f"Error! status code {resp.status_code} : {resp.reason}")
 
             case "publishers":
-                url = f"https://www.freetechbooks.com/publishers?page={page}"
+                url = f"http://www.freetechbooks.com/publishers?page={page}"
                 resp = self.session.request(
                     method="GET",
                     url=url,
@@ -498,7 +499,7 @@ class All:
                     raise Exception(
                         f"Error! status code {resp.status_code} : {resp.reason}")
             case "licenses":
-                url = f"https://www.freetechbooks.com/licenses?page={page}"
+                url = f"http://www.freetechbooks.com/licenses?page={page}"
                 resp = self.session.request(
                     method="GET",
                     url=url,
@@ -593,7 +594,7 @@ class All:
 
         match datascrawl:
             case True:
-                url = f"https://www.freetechbooks.com/{idlink}.html?page={page}"
+                url = f"http://www.freetechbooks.com/{idlink}.html?page={page}"
                 result = self.crawldatas(
                     url=url,
                     page=page,

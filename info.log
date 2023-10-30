@@ -1273,3 +1273,517 @@ AttributeError: 'Boolean' object has no attribute 'get'
 2023-10-24 21:57:58,144 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-24 21:57:58] "GET /wikibooks/featured-books?departement=Computing HTTP/1.1" 200 2428 0.407803
 2023-10-24 21:58:42,513 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-24 21:58:42] "GET /springeropen/search?keyword=islam&sortby=Relevance&page=1 HTTP/1.1" 200 38951 29.190010
 2023-10-24 21:59:11,004 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-24 21:59:11] "GET /springeropen/download?url=https%3A%2F%2Fgeoscienceletters.springeropen.com%2Fcounter%2Fpdf%2F10.1186%2Fs40562-023-00281-y.pdf HTTP/1.1" 200 2191028 4.803976
+2023-10-26 19:16:27,616 - INFO - __main__:44 - listening to http://0.0.0.0:8000
+2023-10-26 19:16:32,251 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:16:32] "GET / HTTP/1.1" 200 3927 0.069387
+2023-10-26 19:16:32,350 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:16:32] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.030873
+2023-10-26 19:16:32,367 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:16:32] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 143913 0.016157
+2023-10-26 19:16:32,435 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:16:32] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 1091663 0.064391
+2023-10-26 19:16:32,439 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:16:32] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 337484 0.002690
+2023-10-26 19:16:32,725 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:16:32] "GET /swagger.json HTTP/1.1" 200 13221 0.009205
+2023-10-26 19:17:08,968 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:17:08] "GET /shopelsevier/search?page=1 HTTP/1.1" 200 27292 29.643531
+2023-10-26 19:44:16,963 - INFO - __main__:44 - listening to http://0.0.0.0:8000
+2023-10-26 19:44:18,359 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:44:18] "GET / HTTP/1.1" 200 3927 0.018975
+2023-10-26 19:44:18,397 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:44:18] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.008774
+2023-10-26 19:44:18,401 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:44:18] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.001476
+2023-10-26 19:44:18,403 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:44:18] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.001223
+2023-10-26 19:44:18,406 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:44:18] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.001229
+2023-10-26 19:44:18,660 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:44:18] "GET /swagger.json HTTP/1.1" 200 13221 0.008682
+2023-10-26 19:44:18,664 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:44:18] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.003623
+2023-10-26 19:44:49,529 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:44:49] "GET /shopelsevier/search?page=1 HTTP/1.1" 200 27000 26.071150
+2023-10-26 19:49:29,385 - INFO - __main__:44 - listening to http://0.0.0.0:8000
+2023-10-26 19:49:32,905 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:49:32] "GET / HTTP/1.1" 200 3927 0.015029
+2023-10-26 19:49:32,936 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:49:32] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.012255
+2023-10-26 19:49:32,948 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:49:32] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.008057
+2023-10-26 19:49:32,958 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:49:32] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.006632
+2023-10-26 19:49:32,961 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:49:32] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.001518
+2023-10-26 19:49:33,104 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:49:33] "GET /swagger.json HTTP/1.1" 200 13221 0.007541
+2023-10-26 19:49:33,107 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:49:33] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.001161
+2023-10-26 19:49:52,644 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:49:52] "GET /shopelsevier/search?page=1 HTTP/1.1" 200 27133 14.771683
+2023-10-26 19:51:07,156 - INFO - __main__:44 - listening to http://0.0.0.0:8000
+2023-10-26 19:51:08,580 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:51:08] "GET / HTTP/1.1" 200 3927 0.016614
+2023-10-26 19:51:08,626 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:51:08] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.017686
+2023-10-26 19:51:08,631 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:51:08] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.002627
+2023-10-26 19:51:08,634 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:51:08] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.001020
+2023-10-26 19:51:08,638 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:51:08] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.002477
+2023-10-26 19:51:08,775 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:51:08] "GET /swagger.json HTTP/1.1" 200 13221 0.009785
+2023-10-26 19:51:08,780 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:51:08] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.002162
+2023-10-26 19:51:27,343 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 19:51:27] "GET /shopelsevier/search?page=1 HTTP/1.1" 200 27133 13.627587
+2023-10-26 20:02:37,558 - INFO - __main__:44 - listening to http://0.0.0.0:8000
+2023-10-26 20:03:00,807 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:03:00] "GET / HTTP/1.1" 200 3927 0.014790
+2023-10-26 20:03:00,843 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:03:00] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.013256
+2023-10-26 20:03:00,846 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:03:00] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.001351
+2023-10-26 20:03:00,849 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:03:00] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.001907
+2023-10-26 20:03:00,851 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:03:00] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.001269
+2023-10-26 20:03:01,104 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:03:01] "GET /swagger.json HTTP/1.1" 200 13221 0.006086
+2023-10-26 20:03:01,106 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:03:01] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.001154
+2023-10-26 20:03:18,288 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:03:18] "GET /shopelsevier/search?page=1 HTTP/1.1" 200 28563 11.328731
+2023-10-26 20:04:56,183 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:04:56] "GET /shopelsevier/search?page=2 HTTP/1.1" 200 29598 27.065771
+2023-10-26 20:32:06,386 - INFO - __main__:44 - listening to http://0.0.0.0:8000
+2023-10-26 20:32:49,642 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:32:49] "GET / HTTP/1.1" 200 3927 0.029940
+2023-10-26 20:32:49,696 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:32:49] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.024318
+2023-10-26 20:32:49,701 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:32:49] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.001769
+2023-10-26 20:32:49,709 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:32:49] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.001707
+2023-10-26 20:32:49,732 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:32:49] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.013396
+2023-10-26 20:32:50,173 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:32:50] "GET /swagger.json HTTP/1.1" 200 13560 0.018205
+2023-10-26 20:32:50,178 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:32:50] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.001687
+2023-10-26 20:33:08,098 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:33:08] "GET /shopelsevier/search?keyword=islam&sortby=relevance&page=1 HTTP/1.1" 500 180 6.882591
+2023-10-26 20:33:58,452 - INFO - __main__:44 - listening to http://0.0.0.0:8000
+2023-10-26 20:34:03,916 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:34:03] "GET / HTTP/1.1" 200 3927 0.026264
+2023-10-26 20:34:03,999 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:34:03] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.025791
+2023-10-26 20:34:04,010 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:34:04] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.007901
+2023-10-26 20:34:04,036 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:34:04] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.019781
+2023-10-26 20:34:04,058 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:34:04] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.018928
+2023-10-26 20:34:04,400 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:34:04] "GET /swagger.json HTTP/1.1" 200 13560 0.012196
+2023-10-26 20:34:04,436 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:34:04] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.004288
+2023-10-26 20:34:30,183 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:34:30] "GET /shopelsevier/search?keyword=islam&sortby=Relevance&page=1 HTTP/1.1" 200 28663 16.514666
+2023-10-26 20:35:22,813 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:35:22] "GET /shopelsevier/search?keyword=islam&sortby=Alphabetical%20(A-Z)&page=1 HTTP/1.1" 403 154 9.202079
+2023-10-26 20:36:34,757 - INFO - __main__:44 - listening to http://0.0.0.0:8000
+2023-10-26 20:36:41,439 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:36:41] "GET / HTTP/1.1" 200 3927 0.023670
+2023-10-26 20:36:41,503 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:36:41] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.019434
+2023-10-26 20:36:41,507 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:36:41] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.002509
+2023-10-26 20:36:41,515 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:36:41] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.002145
+2023-10-26 20:36:41,523 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:36:41] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.005439
+2023-10-26 20:36:41,915 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:36:41] "GET /swagger.json HTTP/1.1" 200 13560 0.008796
+2023-10-26 20:36:41,930 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:36:41] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.005648
+2023-10-26 20:37:15,908 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:37:15] "GET /shopelsevier/search?keyword=islam&sortby=Alphabetical%20(Z-A)&page=1 HTTP/1.1" 200 37438 24.264053
+2023-10-26 20:40:45,783 - INFO - __main__:44 - listening to http://0.0.0.0:8000
+2023-10-26 20:40:48,779 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:40:48] "GET / HTTP/1.1" 200 3927 0.020065
+2023-10-26 20:40:48,819 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:40:48] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.012905
+2023-10-26 20:40:48,826 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:40:48] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.004231
+2023-10-26 20:40:48,831 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:40:48] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.001971
+2023-10-26 20:40:48,870 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:40:48] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.035876
+2023-10-26 20:40:49,067 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:40:49] "GET /swagger.json HTTP/1.1" 200 13560 0.011513
+2023-10-26 20:40:49,081 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:40:49] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.004957
+2023-10-26 20:41:09,596 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:41:09] "GET /shopelsevier/search?keyword=islam&sortby=Relevance&page=1 HTTP/1.1" 200 28563 13.627951
+2023-10-26 20:42:36,663 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:42:36] "GET /shopelsevier/search?keyword=islam&sortby=Alphabetical%20(A-Z)&page=1 HTTP/1.1" 200 29181 18.804419
+2023-10-26 20:43:00,967 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:43:00] "GET /shopelsevier/search?keyword=islam&sortby=Alphabetical%20(Z-A)&page=1 HTTP/1.1" 200 37338 9.812818
+2023-10-26 20:44:18,582 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:44:18] "GET /shopelsevier/search?keyword=islam&sortby=Date%20Published%20(asc)&page=1 HTTP/1.1" 200 17569 22.861093
+2023-10-26 20:48:12,254 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 20:48:12] "GET /shopelsevier/search?keyword=islam&sortby=Date%20Published%20(desc)&page=1 HTTP/1.1" 200 38968 22.282908
+2023-10-26 21:15:16,920 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:15:16] "GET /shopelsevier/search?keyword=islam&sortby=Relevance&page=2 HTTP/1.1" 200 29682 34.371384
+2023-10-26 21:22:15,782 - INFO - __main__:44 - listening to http://0.0.0.0:8000
+2023-10-26 21:22:18,810 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:22:18] "GET / HTTP/1.1" 200 3927 0.037210
+2023-10-26 21:22:18,860 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:22:18] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.016368
+2023-10-26 21:22:18,866 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:22:18] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.003234
+2023-10-26 21:22:18,872 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:22:18] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.002369
+2023-10-26 21:22:18,878 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:22:18] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.003984
+2023-10-26 21:22:19,310 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:22:19] "GET /swagger.json HTTP/1.1" 200 13560 0.015142
+2023-10-26 21:22:19,355 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:22:19] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.001717
+2023-10-26 21:22:52,458 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:22:52] "GET /shopelsevier/search?keyword=islam&sortby=Relevance&page=1 HTTP/1.1" 200 28453 23.328274
+2023-10-26 21:51:19,935 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:51:19] "GET / HTTP/1.1" 200 3927 0.002706
+2023-10-26 21:51:19,965 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:51:19] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.002009
+2023-10-26 21:51:19,975 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:51:19] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.003047
+2023-10-26 21:51:19,987 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:51:19] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.006923
+2023-10-26 21:51:19,994 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:51:19] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.002778
+2023-10-26 21:51:20,340 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:51:20] "GET /swagger.json HTTP/1.1" 200 13560 0.003740
+2023-10-26 21:51:20,349 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:51:20] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.002115
+2023-10-26 21:55:32,856 - INFO - __main__:44 - listening to http://0.0.0.0:8000
+2023-10-26 21:55:34,788 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:55:34] "GET / HTTP/1.1" 200 3927 0.020689
+2023-10-26 21:55:34,829 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:55:34] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.015378
+2023-10-26 21:55:34,840 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:55:34] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.008070
+2023-10-26 21:55:34,847 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:55:34] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.003281
+2023-10-26 21:55:34,857 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:55:34] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.008773
+2023-10-26 21:55:35,221 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:55:35] "GET /swagger.json HTTP/1.1" 200 13560 0.012063
+2023-10-26 21:55:35,226 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:55:35] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.002767
+2023-10-26 21:56:22,823 - INFO - __main__:44 - listening to http://0.0.0.0:8000
+2023-10-26 21:56:25,539 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:56:25] "GET / HTTP/1.1" 200 3927 0.023654
+2023-10-26 21:56:25,579 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:56:25] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.015623
+2023-10-26 21:56:25,591 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:56:25] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.007763
+2023-10-26 21:56:25,603 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:56:25] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.009588
+2023-10-26 21:56:25,608 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:56:25] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.002517
+2023-10-26 21:56:25,824 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:56:25] "GET /swagger.json HTTP/1.1" 200 13548 0.014441
+2023-10-26 21:56:25,828 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:56:25] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.001950
+2023-10-26 21:57:03,621 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:57:03] "GET /elsevier/search?keyword=earth&sortby=Relevance&page=1 HTTP/1.1" 200 31098 25.313347
+2023-10-26 21:59:40,533 - INFO - __main__:44 - listening to http://0.0.0.0:8000
+2023-10-26 21:59:58,850 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:59:58] "GET / HTTP/1.1" 200 3927 0.032836
+2023-10-26 21:59:58,931 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:59:58] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.044255
+2023-10-26 21:59:58,943 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:59:58] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.008004
+2023-10-26 21:59:58,954 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:59:58] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.007917
+2023-10-26 21:59:58,966 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:59:58] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.004250
+2023-10-26 21:59:59,175 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:59:59] "GET /swagger.json HTTP/1.1" 200 13548 0.013777
+2023-10-26 21:59:59,179 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 21:59:59] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.002162
+2023-10-26 22:00:29,363 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:00:29] "GET /elsevier/search?keyword=earth&sortby=Alphabetical%20(A-Z)&page=2 HTTP/1.1" 500 195 7.461888
+2023-10-26 22:02:03,408 - INFO - __main__:44 - listening to http://0.0.0.0:8000
+2023-10-26 22:02:05,999 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:02:05] "GET / HTTP/1.1" 200 3927 0.027394
+2023-10-26 22:02:06,047 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:02:06] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.015596
+2023-10-26 22:02:06,057 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:02:06] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.008079
+2023-10-26 22:02:06,073 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:02:06] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.012488
+2023-10-26 22:02:06,091 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:02:06] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.007754
+2023-10-26 22:02:06,311 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:02:06] "GET /swagger.json HTTP/1.1" 200 13548 0.010543
+2023-10-26 22:02:06,319 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:02:06] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.004872
+2023-10-26 22:02:41,408 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:02:41] "GET /elsevier/search?keyword=earth&sortby=Relevance&page=2 HTTP/1.1" 200 37717 22.724272
+2023-10-26 22:04:38,985 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:04:38] "GET / HTTP/1.1" 200 3927 0.002288
+2023-10-26 22:04:39,018 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:04:39] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.001979
+2023-10-26 22:04:39,028 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:04:39] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.001935
+2023-10-26 22:04:39,033 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:04:39] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.002021
+2023-10-26 22:04:39,039 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:04:39] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.002197
+2023-10-26 22:04:39,257 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:04:39] "GET /swagger.json HTTP/1.1" 200 13548 0.003386
+2023-10-26 22:04:39,270 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:04:39] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.002343
+2023-10-26 22:05:19,577 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:05:19] "GET /elsevier/search?keyword=earth&sortby=Relevance&page=2 HTTP/1.1" 200 40555 21.024970
+2023-10-26 22:08:08,382 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:08:08] "GET /elsevier/search?keyword=enginering&sortby=Relevance&page=1 HTTP/1.1" 200 25260 25.112175
+2023-10-26 22:10:17,957 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-26 22:10:17] "GET /elsevier/search?keyword=enginering&sortby=Relevance&page=1000 HTTP/1.1" 200 21569 24.949938
+2023-10-27 15:47:05,821 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-27 15:47:12,938 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 15:47:12] "GET / HTTP/1.1" 200 3927 0.045104
+2023-10-27 15:47:13,021 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 15:47:13] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.030645
+2023-10-27 15:47:13,028 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 15:47:13] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.005139
+2023-10-27 15:47:13,055 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 15:47:13] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 1091663 0.020722
+2023-10-27 15:47:13,059 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 15:47:13] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.002488
+2023-10-27 15:47:13,692 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 15:47:13] "GET /swagger.json HTTP/1.1" 200 14174 0.026429
+2023-10-27 15:47:30,432 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 15:47:30] "GET /linkspringer/search?keyword=islam&sortby=Relevance&page=1 HTTP/1.1" 500 199 4.597076
+2023-10-27 16:53:56,436 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-27 16:54:10,339 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 16:54:10] "GET / HTTP/1.1" 200 3927 0.021736
+2023-10-27 16:54:10,379 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 16:54:10] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.013187
+2023-10-27 16:54:10,381 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 16:54:10] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.001088
+2023-10-27 16:54:10,383 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 16:54:10] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.001150
+2023-10-27 16:54:10,385 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 16:54:10] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.001034
+2023-10-27 16:54:10,553 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 16:54:10] "GET /swagger.json HTTP/1.1" 200 14174 0.007030
+2023-10-27 16:54:10,555 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 16:54:10] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.001071
+2023-10-27 16:55:17,953 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 16:55:17] "GET /linkspringer/search?keyword=islam&sortby=Relevance&page=1 HTTP/1.1" 200 52357 56.183499
+2023-10-27 17:07:20,696 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-27 17:08:22,595 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:08:22] "GET / HTTP/1.1" 200 3927 0.018251
+2023-10-27 17:08:22,643 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:08:22] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.014063
+2023-10-27 17:08:22,650 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:08:22] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.004964
+2023-10-27 17:08:22,660 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:08:22] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.004954
+2023-10-27 17:08:22,668 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:08:22] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.001398
+2023-10-27 17:08:22,884 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:08:22] "GET /swagger.json HTTP/1.1" 200 14174 0.008804
+2023-10-27 17:08:22,888 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:08:22] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.001759
+2023-10-27 17:09:08,771 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:09:08] "GET /linkspringer/search?keyword=islam&sortby=Relevance&page=1 HTTP/1.1" 200 55127 35.953703
+2023-10-27 17:33:36,542 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-27 17:33:41,226 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:33:41] "GET / HTTP/1.1" 200 3927 0.019114
+2023-10-27 17:33:41,289 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:33:41] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.033931
+2023-10-27 17:33:41,293 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:33:41] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.002433
+2023-10-27 17:33:41,296 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:33:41] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.001146
+2023-10-27 17:33:41,298 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:33:41] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.001220
+2023-10-27 17:33:41,514 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:33:41] "GET /swagger.json HTTP/1.1" 200 14174 0.008629
+2023-10-27 17:33:41,517 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:33:41] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.001076
+2023-10-27 17:34:13,117 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:34:13] "GET /linkspringer/search?keyword=islam&sortby=Relevance&page=1 HTTP/1.1" 200 55123 18.489255
+2023-10-27 17:36:30,430 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:36:30] "GET /linkspringer/search?keyword=islam&sortby=Relevance&page=2 HTTP/1.1" 200 57957 21.776696
+2023-10-27 17:42:10,631 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:42:10] "GET /linkspringer/search?keyword=islam&sortby=Newest%20First&page=1 HTTP/1.1" 200 67611 17.178324
+2023-10-27 17:43:44,895 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 17:43:44] "GET /linkspringer/search?keyword=islam&sortby=Oldest%20First&page=1 HTTP/1.1" 500 199 5.308837
+2023-10-27 19:31:02,600 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-27 19:31:03,230 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:31:03] "GET / HTTP/1.1" 200 3927 0.074327
+2023-10-27 19:31:03,453 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:31:03] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.021881
+2023-10-27 19:31:03,462 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:31:03] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.003048
+2023-10-27 19:31:03,475 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:31:03] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.007803
+2023-10-27 19:31:03,484 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:31:03] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.006369
+2023-10-27 19:31:03,793 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:31:03] "GET /swagger.json HTTP/1.1" 200 14174 0.009123
+2023-10-27 19:31:03,820 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:31:03] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.006346
+2023-10-27 19:31:18,417 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:31:18] "GET /linkspringer/search?keyword=islam&sortby=Oldest%20First&page=1 HTTP/1.1" 200 3103 3.456529
+2023-10-27 19:31:41,953 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-27 19:31:43,915 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:31:43] "GET / HTTP/1.1" 200 3927 0.037678
+2023-10-27 19:31:43,981 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:31:43] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.024154
+2023-10-27 19:31:43,999 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:31:43] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.011604
+2023-10-27 19:31:44,007 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:31:44] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.005780
+2023-10-27 19:31:44,013 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:31:44] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.003109
+2023-10-27 19:31:44,325 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:31:44] "GET /swagger.json HTTP/1.1" 200 14174 0.029424
+2023-10-27 19:31:44,331 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:31:44] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.003530
+2023-10-27 19:32:16,624 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:32:16] "GET /linkspringer/search?keyword=islam&sortby=Oldest%20First&page=1 HTTP/1.1" 200 50828 17.755667
+2023-10-27 19:38:21,702 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 19:38:21] "GET /linkspringer/search?keyword=islam&sortby=Oldest%20First&page=615 HTTP/1.1" 410 144 2.207371
+2023-10-27 20:09:11,586 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-27 20:09:13,541 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 20:09:13] "GET / HTTP/1.1" 200 3927 0.022078
+2023-10-27 20:09:13,609 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 20:09:13] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.032154
+2023-10-27 20:09:13,630 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 20:09:13] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.014822
+2023-10-27 20:09:13,646 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 20:09:13] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.013548
+2023-10-27 20:09:13,652 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 20:09:13] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.002709
+2023-10-27 20:09:14,061 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 20:09:14] "GET /swagger.json HTTP/1.1" 200 14174 0.016942
+2023-10-27 20:09:14,086 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 20:09:14] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.018314
+2023-10-27 20:09:59,113 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 20:09:59] "GET /elsevier/search?keyword=islam&sortby=Relevance&page=1 HTTP/1.1" 200 28652 34.934261
+2023-10-27 20:12:51,738 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 20:12:51] "GET /elsevier/search?keyword=islam&sortby=Relevance&page=2 HTTP/1.1" 200 30293 32.201637
+2023-10-27 20:14:15,510 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 20:14:15] "GET /linkspringer/search?keyword=islam&sortby=Relevance&page=1 HTTP/1.1" 200 55123 19.640138
+2023-10-27 21:15:16,883 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-27 21:15:18,413 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 21:15:18] "GET / HTTP/1.1" 200 3927 0.021788
+2023-10-27 21:15:18,486 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 21:15:18] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.034973
+2023-10-27 21:15:18,490 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 21:15:18] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.002546
+2023-10-27 21:15:18,494 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 21:15:18] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.002040
+2023-10-27 21:15:18,498 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 21:15:18] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.001973
+2023-10-27 21:15:18,907 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 21:15:18] "GET /swagger.json HTTP/1.1" 200 14545 0.023446
+2023-10-27 21:15:18,912 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 21:15:18] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.002140
+2023-10-27 23:09:54,087 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-27 23:09:55,245 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 23:09:55] "GET / HTTP/1.1" 200 3927 0.023926
+2023-10-27 23:09:55,323 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 23:09:55] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.023917
+2023-10-27 23:09:55,334 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 23:09:55] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.006408
+2023-10-27 23:09:55,342 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 23:09:55] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.004059
+2023-10-27 23:09:55,355 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 23:09:55] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.005906
+2023-10-27 23:09:55,767 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 23:09:55] "GET /swagger.json HTTP/1.1" 200 14545 0.015824
+2023-10-27 23:09:55,771 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 23:09:55] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.002244
+2023-10-27 23:10:34,502 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-27 23:10:34] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=Chapter&page=1 HTTP/1.1" 200 27707 25.722738
+2023-10-28 07:37:40,937 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-28 07:37:44,697 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 07:37:44] "GET / HTTP/1.1" 200 3927 0.016387
+2023-10-28 07:37:44,731 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 07:37:44] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.017687
+2023-10-28 07:37:44,734 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 07:37:44] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.001210
+2023-10-28 07:37:44,743 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 07:37:44] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.003979
+2023-10-28 07:37:44,745 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 07:37:44] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.001105
+2023-10-28 07:37:44,931 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 07:37:44] "GET /swagger.json HTTP/1.1" 200 14545 0.006763
+2023-10-28 07:37:44,937 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 07:37:44] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.003243
+2023-10-28 07:38:22,157 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 07:38:22] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=Chapter&page=1 HTTP/1.1" 200 49466 24.786856
+2023-10-28 19:32:32,479 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-28 19:32:35,657 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 19:32:35] "GET / HTTP/1.1" 200 3927 0.022652
+2023-10-28 19:32:35,710 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 19:32:35] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.023077
+2023-10-28 19:32:35,728 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 19:32:35] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.005087
+2023-10-28 19:32:35,731 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 19:32:35] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.002074
+2023-10-28 19:32:35,736 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 19:32:35] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.003880
+2023-10-28 19:32:36,087 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 19:32:36] "GET /swagger.json HTTP/1.1" 200 14545 0.013242
+2023-10-28 19:32:36,099 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 19:32:36] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.005154
+2023-10-28 19:33:19,126 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 19:33:19] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=Article&page=1 HTTP/1.1" 200 21790 23.817798
+2023-10-28 19:37:09,217 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 19:37:09] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=Article&page=2 HTTP/1.1" 200 20619 24.302388
+2023-10-28 20:57:20,123 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-28 20:57:25,490 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 20:57:25] "GET / HTTP/1.1" 200 3927 0.015474
+2023-10-28 20:57:25,524 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 20:57:25] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.015162
+2023-10-28 20:57:25,535 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 20:57:25] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.007019
+2023-10-28 20:57:25,544 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 20:57:25] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.004570
+2023-10-28 20:57:25,554 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 20:57:25] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.009499
+2023-10-28 20:57:25,759 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 20:57:25] "GET /swagger.json HTTP/1.1" 200 14545 0.007624
+2023-10-28 20:57:25,760 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 20:57:25] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.000801
+2023-10-28 20:57:38,727 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 20:57:38] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=ConferencePaper&page=1 HTTP/1.1" 500 212 3.366773
+2023-10-28 21:02:42,164 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-28 21:02:45,171 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:02:45] "GET / HTTP/1.1" 200 3927 0.013027
+2023-10-28 21:02:45,203 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:02:45] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.014933
+2023-10-28 21:02:45,211 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:02:45] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.005161
+2023-10-28 21:02:45,217 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:02:45] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.004650
+2023-10-28 21:02:45,219 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:02:45] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.001207
+2023-10-28 21:02:45,435 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:02:45] "GET /swagger.json HTTP/1.1" 200 14545 0.007917
+2023-10-28 21:02:45,437 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:02:45] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.001253
+2023-10-28 21:03:57,567 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:03:57] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=ConferencePaper&page=1 HTTP/1.1" 200 185 62.218815
+2023-10-28 21:05:05,891 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-28 21:05:06,433 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:05:06] "GET / HTTP/1.1" 200 3927 0.013713
+2023-10-28 21:05:06,462 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:05:06] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.012888
+2023-10-28 21:05:06,468 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:05:06] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.004246
+2023-10-28 21:05:06,473 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:05:06] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.003681
+2023-10-28 21:05:06,479 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:05:06] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.004046
+2023-10-28 21:05:06,651 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:05:06] "GET /swagger.json HTTP/1.1" 200 14545 0.011695
+2023-10-28 21:05:06,655 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:05:06] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.002004
+2023-10-28 21:06:06,785 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:06:06] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=ConferencePaper&page=1 HTTP/1.1" 200 60214 50.591620
+2023-10-28 21:21:09,987 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-28 21:21:13,033 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:21:13] "GET / HTTP/1.1" 200 3927 0.015103
+2023-10-28 21:21:13,067 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:21:13] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.016203
+2023-10-28 21:21:13,074 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:21:13] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.005623
+2023-10-28 21:21:13,079 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:21:13] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.003817
+2023-10-28 21:21:13,088 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:21:13] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.003685
+2023-10-28 21:21:13,294 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:21:13] "GET /swagger.json HTTP/1.1" 200 14545 0.010054
+2023-10-28 21:21:13,297 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:21:13] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.001225
+2023-10-28 21:22:05,618 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-28 21:22:05] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=ReferenceWorkEntry&page=1 HTTP/1.1" 200 25590 42.318500
+2023-10-29 10:24:11,866 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 10:24:14,553 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:24:14] "GET / HTTP/1.1" 200 3927 0.022673
+2023-10-29 10:24:14,610 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:24:14] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.029626
+2023-10-29 10:24:14,617 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:24:14] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.002108
+2023-10-29 10:24:14,624 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:24:14] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.003756
+2023-10-29 10:24:14,660 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:24:14] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.030527
+2023-10-29 10:24:15,011 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:24:15] "GET /swagger.json HTTP/1.1" 200 14986 0.010509
+2023-10-29 10:24:15,026 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:24:15] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.007318
+2023-10-29 10:24:31,154 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:24:31] "GET /linkspringer/search?keyword=earth&sortby=Relevance&content_type=BookSeries&page=1 HTTP/1.1" 200 2636 2.913212
+2023-10-29 10:24:49,550 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:24:49] "GET /linkspringer/books-series?id=10032&page=1 HTTP/1.1" 500 229 4.239018
+2023-10-29 10:33:31,980 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 10:33:33,396 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:33:33] "GET / HTTP/1.1" 200 3927 0.020945
+2023-10-29 10:33:33,479 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:33:33] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.033425
+2023-10-29 10:33:33,486 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:33:33] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.002138
+2023-10-29 10:33:33,501 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:33:33] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.007849
+2023-10-29 10:33:33,511 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:33:33] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.005823
+2023-10-29 10:33:33,890 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:33:33] "GET /swagger.json HTTP/1.1" 200 14986 0.011132
+2023-10-29 10:33:33,895 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:33:33] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.004292
+2023-10-29 10:33:48,151 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:33:48] "GET /linkspringer/search?keyword=earth&sortby=Relevance&content_type=BookSeries&page=1 HTTP/1.1" 200 2636 2.622590
+2023-10-29 10:34:23,939 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:34:23] "GET /linkspringer/books-series?id=10032&page=1 HTTP/1.1" 200 36930 21.710597
+2023-10-29 10:36:04,842 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:36:04] "GET /linkspringer/books-series?id=10032&page=6 HTTP/1.1" 200 9734 8.450734
+2023-10-29 10:39:16,804 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:39:16] "GET /linkspringer/books-series?id=13484&page=1 HTTP/1.1" 200 9193 8.718383
+2023-10-29 10:41:08,752 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:41:08] "GET /linkspringer/search?keyword=earth&sortby=Relevance&content_type=Protocol&page=1 HTTP/1.1" 200 53106 40.136493
+2023-10-29 10:42:08,517 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:42:08] "GET /linkspringer/search?keyword=earth&sortby=Relevance&content_type=ReferenceWork&page=1 HTTP/1.1" 200 95096 21.193003
+2023-10-29 10:43:10,489 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:43:10] "GET /linkspringer/search?keyword=earth&sortby=Relevance&content_type=ConferenceProceedings&page=1 HTTP/1.1" 200 93676 23.205929
+2023-10-29 10:50:02,152 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 10:58:48,571 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:58:48] "GET / HTTP/1.1" 200 3927 0.037344
+2023-10-29 10:58:48,660 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:58:48] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.029862
+2023-10-29 10:58:48,678 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:58:48] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.006178
+2023-10-29 10:58:48,689 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:58:48] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.006967
+2023-10-29 10:58:48,701 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:58:48] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.002062
+2023-10-29 10:58:49,082 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:58:49] "GET /swagger.json HTTP/1.1" 200 14986 0.012958
+2023-10-29 10:58:49,086 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:58:49] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.001935
+2023-10-29 10:59:06,545 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:59:06] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=ReferenceWorkEntry&page=1 HTTP/1.1" 500 200 5.261366
+2023-10-29 10:59:40,949 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 10:59:42,470 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:59:42] "GET / HTTP/1.1" 200 3927 0.038678
+2023-10-29 10:59:42,548 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:59:42] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.035329
+2023-10-29 10:59:42,552 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:59:42] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.001983
+2023-10-29 10:59:42,572 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:59:42] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.008133
+2023-10-29 10:59:42,582 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:59:42] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.005385
+2023-10-29 10:59:42,818 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:59:42] "GET /swagger.json HTTP/1.1" 200 14986 0.026960
+2023-10-29 10:59:42,825 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 10:59:42] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.004251
+2023-10-29 11:00:20,866 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:00:20] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=ReferenceWorkEntry&page=1 HTTP/1.1" 200 25184 25.449144
+2023-10-29 11:01:25,958 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:01:25] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=ConferencePaper&page=1 HTTP/1.1" 200 59684 28.465281
+2023-10-29 11:02:23,104 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:02:23] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=Book&page=1 HTTP/1.1" 200 60763 24.683707
+2023-10-29 11:03:01,926 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:03:01] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=Article&page=1 HTTP/1.1" 500 204 2.883435
+2023-10-29 11:29:29,986 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 11:29:31,230 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:29:31] "GET / HTTP/1.1" 200 3927 0.039449
+2023-10-29 11:29:31,331 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:29:31] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.034678
+2023-10-29 11:29:31,335 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:29:31] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.002109
+2023-10-29 11:29:31,340 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:29:31] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.002367
+2023-10-29 11:29:31,348 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:29:31] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.002499
+2023-10-29 11:29:31,713 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:29:31] "GET /swagger.json HTTP/1.1" 200 14986 0.012635
+2023-10-29 11:29:31,717 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:29:31] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.001903
+2023-10-29 11:29:44,551 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:29:44] "GET /freetechbooks/get-all-books-by?option=topics&page=1 HTTP/1.1" 500 415 0.882460
+2023-10-29 11:31:52,468 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 11:31:53,964 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:31:53] "GET / HTTP/1.1" 200 3927 0.021772
+2023-10-29 11:31:54,020 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:31:54] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.021330
+2023-10-29 11:31:54,031 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:31:54] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.003493
+2023-10-29 11:31:54,042 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:31:54] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.005216
+2023-10-29 11:31:54,045 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:31:54] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.001862
+2023-10-29 11:31:54,275 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:31:54] "GET /swagger.json HTTP/1.1" 200 14986 0.014677
+2023-10-29 11:31:54,290 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:31:54] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.010766
+2023-10-29 11:32:06,947 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:32:06] "GET /freetechbooks/get-all-books-by?option=topics&page=1 HTTP/1.1" 200 24463 6.354064
+2023-10-29 11:33:16,618 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:33:16] "GET /linkspringer/search?keyword=earth&sortby=Relevance&content_type=Article&page=1 HTTP/1.1" 200 158 33.555165
+2023-10-29 11:36:30,793 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 11:36:31,260 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:36:31] "GET / HTTP/1.1" 200 3927 0.022375
+2023-10-29 11:36:31,319 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:36:31] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.017828
+2023-10-29 11:36:31,323 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:36:31] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.001933
+2023-10-29 11:36:31,335 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:36:31] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.010936
+2023-10-29 11:36:31,348 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:36:31] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.006470
+2023-10-29 11:36:31,581 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:36:31] "GET /swagger.json HTTP/1.1" 200 14986 0.013260
+2023-10-29 11:36:31,590 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:36:31] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.006835
+2023-10-29 11:37:06,679 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:37:06] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=Article&page=1 HTTP/1.1" 200 158 23.934181
+2023-10-29 11:39:10,859 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 11:40:13,815 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:40:13] "GET / HTTP/1.1" 200 3927 0.023479
+2023-10-29 11:40:13,872 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:40:13] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.018933
+2023-10-29 11:40:13,878 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:40:13] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.003697
+2023-10-29 11:40:13,883 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:40:13] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.002370
+2023-10-29 11:40:13,887 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:40:13] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.003002
+2023-10-29 11:40:14,048 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:40:14] "GET /swagger.json HTTP/1.1" 200 14986 0.011872
+2023-10-29 11:40:14,061 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:40:14] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.007082
+2023-10-29 11:40:50,601 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:40:50] "GET /linkspringer/search?keyword=earth&sortby=Relevance&content_type=Article&page=1 HTTP/1.1" 200 17957 23.348331
+2023-10-29 11:42:27,768 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 11:42:27] "GET /linkspringer/search?keyword=earth&sortby=Relevance&content_type=Chapter&page=1 HTTP/1.1" 200 38800 34.081332
+2023-10-29 15:57:27,798 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 15:58:00,626 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 15:58:00] "GET / HTTP/1.1" 200 3927 0.019085
+2023-10-29 15:58:00,695 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 15:58:00] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.030660
+2023-10-29 15:58:00,701 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 15:58:00] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.004466
+2023-10-29 15:58:00,705 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 15:58:00] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.002146
+2023-10-29 15:58:00,712 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 15:58:00] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.002798
+2023-10-29 15:58:01,057 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 15:58:01] "GET /swagger.json HTTP/1.1" 200 14986 0.009890
+2023-10-29 15:58:01,070 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 15:58:01] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.003215
+2023-10-29 15:58:42,046 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 15:58:42] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=Chapter&page=1 HTTP/1.1" 200 47794 31.635977
+2023-10-29 16:00:30,355 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:00:30] "GET /linkspringer/search?keyword=earth&sortby=Relevance&content_type=Chapter&page=1 HTTP/1.1" 200 39387 28.394574
+2023-10-29 16:10:39,410 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 16:10:40,014 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:10:40] "GET / HTTP/1.1" 200 3927 0.030085
+2023-10-29 16:10:40,073 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:10:40] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.015693
+2023-10-29 16:10:40,077 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:10:40] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.002082
+2023-10-29 16:10:40,083 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:10:40] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.002645
+2023-10-29 16:10:40,087 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:10:40] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.002061
+2023-10-29 16:10:40,463 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:10:40] "GET /swagger.json HTTP/1.1" 200 15327 0.010469
+2023-10-29 16:10:40,467 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:10:40] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.002140
+2023-10-29 16:11:21,290 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:11:21] "GET /linkspringer/search?keyword=earth&sortby=Relevance&content_type=Chapter&page=1 HTTP/1.1" 200 39387 23.431569
+2023-10-29 16:11:36,673 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:11:36] "GET /linkspringer/download?url=https%3A%2F%2Fpage-one.springer.com%2Fpdf%2Fpreview%2F10.1007%2F978-3-642-11054-2_3 HTTP/1.1" 200 19285 0.413350
+2023-10-29 16:12:15,550 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:12:15] "GET /linkspringer/download?url=https%3A%2F%2Fpage-one.springer.com%2Fpdf%2Fpreview%2F10.1007%2F978-94-009-5368-0_22 HTTP/1.1" 403 154 0.828037
+2023-10-29 16:13:10,949 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:13:10] "GET /linkspringer/download?url=https%3A%2F%2Fpage-one.springer.com%2Fpdf%2Fpreview%2F10.1007%2F978-0-387-49981-9_2 HTTP/1.1" 200 1643888 2.436978
+2023-10-29 16:18:09,040 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 16:18:10,241 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:18:10] "GET / HTTP/1.1" 200 3927 0.022938
+2023-10-29 16:18:10,320 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:18:10] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.026348
+2023-10-29 16:18:10,338 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:18:10] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.002884
+2023-10-29 16:18:10,351 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:18:10] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.008770
+2023-10-29 16:18:10,355 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:18:10] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.002248
+2023-10-29 16:18:10,770 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:18:10] "GET /swagger.json HTTP/1.1" 200 15429 0.021471
+2023-10-29 16:18:10,773 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:18:10] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.002216
+2023-10-29 16:18:55,585 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:18:55] "GET /linkspringer/search?keyword=earth&sortby=Relevance&content_type=Book&page=1 HTTP/1.1" 200 65888 28.829953
+2023-10-29 16:19:53,285 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:19:53] "GET /linkspringer/download?url=https%3A%2F%2Fpage-one.springer.com%2Fpdf%2Fpreview%2F10.1007%2F978-94-009-7807-2_9&title=High-Precision%20Earth%20Rotation%20and%20Earth-Moon%20Dynamics HTTP/1.1" 500 327 0.047159
+2023-10-29 16:27:22,643 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 16:27:24,161 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:27:24] "GET / HTTP/1.1" 200 3927 0.027874
+2023-10-29 16:27:24,274 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:27:24] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.030457
+2023-10-29 16:27:24,283 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:27:24] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.005532
+2023-10-29 16:27:24,294 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:27:24] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.003104
+2023-10-29 16:27:24,298 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:27:24] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.002126
+2023-10-29 16:27:24,541 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:27:24] "GET /swagger.json HTTP/1.1" 200 15429 0.020207
+2023-10-29 16:27:24,546 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:27:24] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.002189
+2023-10-29 16:28:11,947 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:28:11] "GET /linkspringer/search?keyword=programmer&sortby=Relevance&content_type=Article&page=1 HTTP/1.1" 200 30579 29.487031
+2023-10-29 16:28:44,354 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:28:44] "GET /linkspringer/download?url=https%3A%2F%2Flink.springer.com%2Fcontent%2Fpdf%2F10.1155%2F2008%2F234710.pdf&title=A%20Real-Time%20Programmer%27s%20Tour%20of%20General-Purpose%20L4%20Microkernels HTTP/1.1" 500 195 0.041335
+2023-10-29 16:29:48,949 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 16:29:50,745 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:29:50] "GET / HTTP/1.1" 200 3927 0.023560
+2023-10-29 16:29:50,804 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:29:50] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.018082
+2023-10-29 16:29:50,818 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:29:50] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.007547
+2023-10-29 16:29:50,835 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:29:50] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.004909
+2023-10-29 16:29:50,846 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:29:50] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.008259
+2023-10-29 16:29:51,071 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:29:51] "GET /swagger.json HTTP/1.1" 200 15429 0.014055
+2023-10-29 16:29:51,077 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:29:51] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.001729
+2023-10-29 16:30:36,414 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:30:36] "GET /linkspringer/search?keyword=nusantara&sortby=Relevance&content_type=Article&page=1 HTTP/1.1" 200 42990 26.616634
+2023-10-29 16:31:33,173 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:31:33] "GET /linkspringer/download?url=https%3A%2F%2Flink.springer.com%2Fcontent%2Fpdf%2F10.1007%2Fs10639-019-09901-7.pdf&title=Finding%20model%20through%20latent%20semantic%20approach%20to%20reveal%20the%20topic%20of%20discussion%20in%20discussion%20forum HTTP/1.1" 200 1851301 8.002655
+2023-10-29 16:33:25,477 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:33:25] "GET /linkspringer/download?url=https%3A%2F%2Flink.springer.com%2Fcontent%2Fpdf%2F10.1186%2Fs12889-017-4877-4.pdf&title=Proceedings%20of%20the%20Andalas%20International%20Public%20Health%20Conference%202017 HTTP/1.1" 200 861496 4.998059
+2023-10-29 16:57:17,518 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 16:57:20,681 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:57:20] "GET / HTTP/1.1" 200 3927 0.026256
+2023-10-29 16:57:20,759 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:57:20] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.019867
+2023-10-29 16:57:20,773 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:57:20] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.002079
+2023-10-29 16:57:20,779 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:57:20] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.004246
+2023-10-29 16:57:20,788 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:57:20] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.002899
+2023-10-29 16:57:21,137 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:57:21] "GET /swagger.json HTTP/1.1" 200 15327 0.014364
+2023-10-29 16:57:21,144 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:57:21] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.002968
+2023-10-29 16:58:30,597 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:58:30] "GET /linkspringer/search?keyword=work&sortby=Relevance&content_type=Book&page=1 HTTP/1.1" 200 64960 54.443101
+2023-10-29 16:59:03,597 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 16:59:03] "GET /linkspringer/download?url=https%3A%2F%2Fpage-one.springer.com%2Fpdf%2Fpreview%2F10.1057%2F9781137527813_12 HTTP/1.1" 200 192695 1.916719
+2023-10-29 17:04:15,150 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 17:04:17,699 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:04:17] "GET / HTTP/1.1" 200 3927 0.030145
+2023-10-29 17:04:17,782 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:04:17] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.026583
+2023-10-29 17:04:17,785 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:04:17] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.001460
+2023-10-29 17:04:17,790 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:04:17] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.004364
+2023-10-29 17:04:17,797 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:04:17] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.004473
+2023-10-29 17:04:18,268 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:04:18] "GET /swagger.json HTTP/1.1" 200 15327 0.016075
+2023-10-29 17:04:18,273 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:04:18] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.002373
+2023-10-29 17:04:42,779 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:04:42] "GET /linkspringer/search?keyword=programmer&sortby=Relevance&content_type=BookSeries&page=1 HTTP/1.1" 200 186 7.369829
+2023-10-29 17:05:54,255 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:05:54] "GET /linkspringer/search?keyword=indonesia&sortby=Relevance&content_type=BookSeries&page=1 HTTP/1.1" 200 299 4.075640
+2023-10-29 17:06:41,387 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:06:41] "GET /linkspringer/books-series?id=10911&page=1 HTTP/1.1" 200 9584 31.228169
+2023-10-29 17:07:59,655 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:07:59] "GET /linkspringer/download?url=https%3A%2F%2Flink.springer.com%2Fcontent%2Fpdf%2Fbbm%3A978-94-017-4949-7%2F1%3Fpdf%3Dchapter%2520toc HTTP/1.1" 500 199 7.924350
+2023-10-29 17:18:17,196 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 17:18:39,806 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:18:39] "GET / HTTP/1.1" 200 3927 0.021346
+2023-10-29 17:18:39,880 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:18:39] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.019372
+2023-10-29 17:18:39,885 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:18:39] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.002103
+2023-10-29 17:18:39,888 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:18:39] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.002004
+2023-10-29 17:18:39,897 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:18:39] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.002022
+2023-10-29 17:18:40,271 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:18:40] "GET /swagger.json HTTP/1.1" 200 15327 0.012368
+2023-10-29 17:18:40,279 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:18:40] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.005131
+2023-10-29 17:19:44,995 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:19:44] "GET /linkspringer/search?keyword=teknologi&sortby=Relevance&content_type=Book&page=1 HTTP/1.1" 200 91466 48.790166
+2023-10-29 17:20:32,325 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:20:32] "GET /linkspringer/download?url=https%3A%2F%2Flink.springer.com%2Fcontent%2Fpdf%2Fbfm%3A978-981-16-0742-4%2F2%2F1%3Fpdf%3Dchapter%2520toc HTTP/1.1" 500 199 4.918547
+2023-10-29 17:27:59,260 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 17:28:04,773 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:28:04] "GET / HTTP/1.1" 200 3927 0.022864
+2023-10-29 17:28:04,842 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:28:04] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.022345
+2023-10-29 17:28:04,855 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:28:04] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.009234
+2023-10-29 17:28:04,874 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:28:04] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.009517
+2023-10-29 17:28:04,881 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:28:04] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.003680
+2023-10-29 17:28:05,214 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:28:05] "GET /swagger.json HTTP/1.1" 200 15327 0.011501
+2023-10-29 17:28:05,225 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:28:05] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.005070
+2023-10-29 17:29:14,099 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:29:14] "GET /linkspringer/search?keyword=palestine&sortby=Relevance&content_type=Book&page=1 HTTP/1.1" 200 59933 50.110985
+2023-10-29 17:29:45,482 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:29:45] "GET /linkspringer/download?url=https%3A%2F%2Flink.springer.com%2Fcontent%2Fpdf%2Fbfm%3A978-1-137-03195-2%2F1%3Fpdf%3Dchapter%2520toc HTTP/1.1" 200 84980 6.608318
+2023-10-29 17:30:19,663 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:30:19] "GET /linkspringer/download?url=https%3A%2F%2Flink.springer.com%2Fcontent%2Fpdf%2Fbbm%3A978-1-137-03195-2%2F1%3Fpdf%3Dchapter%2520toc HTTP/1.1" 200 186597 9.463395
+2023-10-29 17:32:36,959 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 17:32:40,432 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:32:40] "GET / HTTP/1.1" 200 3927 0.021811
+2023-10-29 17:32:40,496 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:32:40] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.015777
+2023-10-29 17:32:40,504 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:32:40] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.002077
+2023-10-29 17:32:40,514 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:32:40] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.007545
+2023-10-29 17:32:40,523 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:32:40] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.003525
+2023-10-29 17:32:40,860 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:32:40] "GET /swagger.json HTTP/1.1" 200 15327 0.013158
+2023-10-29 17:32:40,865 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:32:40] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.003358
+2023-10-29 17:34:04,578 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:34:04] "GET /linkspringer/search?keyword=bali&sortby=Relevance&content_type=Book&page=1 HTTP/1.1" 200 98712 65.988731
+2023-10-29 17:34:44,133 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:34:44] "GET /linkspringer/download?url=https%3A%2F%2Flink.springer.com%2Fcontent%2Fpdf%2Fbbm%3A978-1-137-54146-8%2F1%3Fpdf%3Dchapter%2520toc HTTP/1.1" 500 192 6.610923
+2023-10-29 17:37:37,628 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 17:37:43,253 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:37:43] "GET / HTTP/1.1" 200 3927 0.023304
+2023-10-29 17:37:43,326 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:37:43] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.019946
+2023-10-29 17:37:43,341 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:37:43] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.011023
+2023-10-29 17:37:43,353 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:37:43] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.007606
+2023-10-29 17:37:43,356 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:37:43] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.001941
+2023-10-29 17:37:43,771 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:37:43] "GET /swagger.json HTTP/1.1" 200 15327 0.011937
+2023-10-29 17:37:43,775 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:37:43] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.002281
+2023-10-29 17:38:04,058 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:38:04] "GET /linkspringer/download?url=https%3A%2F%2Flink.springer.com%2Fcontent%2Fpdf%2Fbbm%3A978-1-137-54146-8%2F1%3Fpdf%3Dchapter%2520toc HTTP/1.1" 200 267749 8.773746
+2023-10-29 17:44:39,822 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-29 17:44:53,266 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:44:53] "GET / HTTP/1.1" 200 3927 0.020896
+2023-10-29 17:44:53,319 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:44:53] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.022601
+2023-10-29 17:44:53,330 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:44:53] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 151 0.007498
+2023-10-29 17:44:53,347 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:44:53] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.012143
+2023-10-29 17:44:53,351 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:44:53] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.001822
+2023-10-29 17:44:53,478 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:44:53] "GET /swagger.json HTTP/1.1" 200 15327 0.013706
+2023-10-29 17:44:53,489 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:44:53] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.005929
+2023-10-29 17:45:55,404 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:45:55] "GET /linkspringer/search?keyword=islam&sortby=Newest%20First&content_type=Book&page=1 HTTP/1.1" 200 60763 36.069651
+2023-10-29 17:47:26,337 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:47:26] "GET /linkspringer/search?keyword=islam&sortby=Oldest%20First&content_type=Book&page=1 HTTP/1.1" 200 60763 56.477333
+2023-10-29 17:48:39,688 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:48:39] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=Book&date_published=2023&page=1 HTTP/1.1" 200 81401 50.559577
+2023-10-29 17:50:31,706 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:50:31] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=Article&date_published=2023&page=1 HTTP/1.1" 200 41144 61.156713
+2023-10-29 17:54:01,784 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-29 17:54:01] "GET /linkspringer/search?keyword=islam&sortby=Oldest%20First&content_type=Chapter&page=1 HTTP/1.1" 200 47794 64.356124
+2023-10-30 09:33:03,105 - INFO - __main__:45 - listening to http://0.0.0.0:8000
+2023-10-30 09:33:04,867 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-30 09:33:04] "GET / HTTP/1.1" 200 3927 0.024559
+2023-10-30 09:33:04,929 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-30 09:33:04] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 145 0.030882
+2023-10-30 09:33:04,954 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-30 09:33:04] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 1091663 0.022865
+2023-10-30 09:33:04,974 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-30 09:33:04] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 145 0.007265
+2023-10-30 09:33:04,984 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-30 09:33:04] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 162 0.001926
+2023-10-30 09:33:05,283 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-30 09:33:05] "GET /swagger.json HTTP/1.1" 200 15327 0.016990
+2023-10-30 09:33:05,306 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-30 09:33:05] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 148 0.007704
+2023-10-30 09:33:51,967 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-30 09:33:51] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=Chapter&page=1 HTTP/1.1" 200 47882 29.056017
+2023-10-30 09:36:14,090 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-30 09:36:14] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=Article&page=1 HTTP/1.1" 200 21786 21.113451
+2023-10-30 09:38:58,260 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-30 09:38:58] "GET /linkspringer/download?url=https%3A%2F%2Fcitation-needed.springer.com%2Fv2%2Freferences%2F10.1007%2Fs11562-007-0037-4%3Fformat%3Drefman%26flavour%3Dcitation HTTP/1.1" 200 541 0.868718
+2023-10-30 09:40:12,131 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-30 09:40:12] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=Book&page=1 HTTP/1.1" 200 60763 18.655532
+2023-10-30 09:40:39,104 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-30 09:40:39] "GET /linkspringer/download?url=https%3A%2F%2Fpage-one.springer.com%2Fpdf%2Fpreview%2F10.1007%2F978-3-663-01166-8_4 HTTP/1.1" 200 336695 1.593769
+2023-10-30 09:41:53,884 - INFO - __main__:1349 - 127.0.0.1 - - [2023-10-30 09:41:53] "GET /linkspringer/search?keyword=islam&sortby=Relevance&content_type=ConferencePaper&page=1 HTTP/1.1" 200 59684 26.533939
